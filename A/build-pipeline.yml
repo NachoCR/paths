@@ -13,6 +13,8 @@ pr:
     - A/*
     exclude:
     - B/B-1/*
+    - B/B-2/*
+    
     
 pool: 
   vmImage: 'ubuntu-latest'
