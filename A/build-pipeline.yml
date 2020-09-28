@@ -6,7 +6,14 @@ trigger:
   paths:
     include:
       - 'A/*'
-
+      
+pr:
+  paths:
+    include:
+    - A/*
+    exclude:
+    - B/B-1/*
+    
 pool: 
   vmImage: 'ubuntu-latest'
 
