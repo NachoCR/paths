@@ -1,1 +1,17 @@
-Pipeline de A
+trigger:
+  batch: true
+  branches:
+    include:
+      - '*'
+  paths:
+    include:
+      - 'A/*'
+
+pool: 
+  vmImage: 'ubuntu-latest'
+
+steps:
+ - script: echo "Hola Mundo"
+ 
+
+
