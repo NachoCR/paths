@@ -3,7 +3,15 @@ trigger:
   paths:
     include:
       - 'B/B-2/*'
-
+      
+pr:
+  paths:
+    include:
+    - B/B-1/*
+    - B/B-2/*
+    exclude:
+    - A/*
+    
 pool: 
   vmImage: 'ubuntu-latest'
 
