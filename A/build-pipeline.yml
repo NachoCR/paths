@@ -1,12 +1,9 @@
 trigger:
   batch: true
-  branches:
-    include:
-      - '*'
   paths:
     include:
       - 'A/*'
-      
+
 pr:
   paths:
     include:
