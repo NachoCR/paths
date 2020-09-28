@@ -1,1 +1,17 @@
-B2
+trigger:
+  batch: true
+  branches:
+    include:
+      - '*'
+  paths:
+    include:
+      - 'B/B-2/*'
+
+pool: 
+  vmImage: 'ubuntu-latest'
+
+steps:
+ - script: echo "Hola Mundo b2"
+ 
+
+
